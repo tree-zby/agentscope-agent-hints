@@ -45,7 +45,7 @@ pip install "agentscope-agent-hints[agentscope]"
 ```
 
 The protocol core has no third-party dependencies; the `agentscope` extra
-installs the harness.
+installs the harness. Requires Python 3.11+ (AgentScope 2.x requires it).
 
 ## Quick start
 
