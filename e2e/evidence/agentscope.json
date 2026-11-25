@@ -1,0 +1,392 @@
+{
+  "harness": "agentscope",
+  "harness_version": "2.0.12",
+  "protocol": "v1.0",
+  "requests": [
+    {
+      "path": "/v1/chat/completions",
+      "hint": {
+        "session": {
+          "session_id": "9501699156c84d75bcfbf2c42bc1b666",
+          "call_index": 1,
+          "epoch": 0,
+          "state": "start"
+        },
+        "priority_control": {
+          "priority": {
+            "level": 3,
+            "reason": "user_waiting"
+          }
+        },
+        "cache_control": {
+          "type": "ephemeral",
+          "ttl_s": 600,
+          "msg_offset": 3
+        }
+      },
+      "body_keys": [
+        "messages",
+        "model",
+        "stream",
+        "tools"
+      ],
+      "message_count": 3,
+      "roles": [
+        "system",
+        "user",
+        "user"
+      ],
+      "shapes": [
+        {
+          "role": "system",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "system"
+        },
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "user"
+        },
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": null
+        }
+      ],
+      "model": "stub-model",
+      "manage": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "hint": {
+        "session": {
+          "session_id": "9501699156c84d75bcfbf2c42bc1b666",
+          "call_index": 2,
+          "epoch": 0,
+          "state": "append"
+        },
+        "priority_control": {
+          "priority": {
+            "level": 1,
+            "reason": "critical_path"
+          }
+        },
+        "cache_control": {
+          "type": "ephemeral",
+          "ttl_s": 60,
+          "msg_offset": 5
+        }
+      },
+      "body_keys": [
+        "messages",
+        "model",
+        "stream",
+        "tools"
+      ],
+      "message_count": 5,
+      "roles": [
+        "system",
+        "user",
+        "user",
+        "assistant",
+        "tool"
+      ],
+      "shapes": [
+        {
+          "role": "system",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "system"
+        },
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "user"
+        },
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": null
+        },
+        {
+          "role": "assistant",
+          "content": [
+            "none"
+          ],
+          "tool_calls": 1,
+          "tool_call_id": false,
+          "name": "capture-agent"
+        },
+        {
+          "role": "tool",
+          "content": [
+            "str"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": true,
+          "name": "get_time"
+        }
+      ],
+      "model": "stub-model",
+      "manage": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "hint": {
+        "session": {
+          "session_id": "9501699156c84d75bcfbf2c42bc1b666",
+          "call_index": 3,
+          "epoch": 0,
+          "state": "append"
+        },
+        "priority_control": {
+          "priority": {
+            "level": 3,
+            "reason": "user_waiting"
+          }
+        },
+        "cache_control": {
+          "type": "ephemeral",
+          "ttl_s": 60,
+          "msg_offset": 7
+        }
+      },
+      "body_keys": [
+        "messages",
+        "model",
+        "stream",
+        "tools"
+      ],
+      "message_count": 7,
+      "roles": [
+        "system",
+        "user",
+        "user",
+        "assistant",
+        "tool",
+        "assistant",
+        "user"
+      ],
+      "shapes": [
+        {
+          "role": "system",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "system"
+        },
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "user"
+        },
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": null
+        },
+        {
+          "role": "assistant",
+          "content": [
+            "none"
+          ],
+          "tool_calls": 1,
+          "tool_call_id": false,
+          "name": "capture-agent"
+        },
+        {
+          "role": "tool",
+          "content": [
+            "str"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": true,
+          "name": "get_time"
+        },
+        {
+          "role": "assistant",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "capture-agent"
+        },
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "user"
+        }
+      ],
+      "model": "stub-model",
+      "manage": false
+    },
+    {
+      "path": "/v1/chat/completions",
+      "hint": {
+        "session": {
+          "session_id": "9501699156c84d75bcfbf2c42bc1b666",
+          "call_index": 3,
+          "epoch": 0,
+          "state": "pause"
+        },
+        "context_management": {
+          "manage_request": true,
+          "edits": [
+            {
+              "type": "offload",
+              "target": "session"
+            }
+          ]
+        }
+      },
+      "body_keys": [
+        "messages",
+        "model",
+        "stream"
+      ],
+      "message_count": 0,
+      "roles": [],
+      "shapes": [],
+      "model": "stub-model",
+      "manage": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "hint": {
+        "session": {
+          "session_id": "9501699156c84d75bcfbf2c42bc1b666",
+          "call_index": 4,
+          "epoch": 0,
+          "state": "resume"
+        },
+        "context_management": {
+          "manage_request": true,
+          "edits": [
+            {
+              "type": "prefetch",
+              "target": "session"
+            }
+          ]
+        }
+      },
+      "body_keys": [
+        "messages",
+        "model",
+        "stream"
+      ],
+      "message_count": 0,
+      "roles": [],
+      "shapes": [],
+      "model": "stub-model",
+      "manage": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "hint": {
+        "session": {
+          "session_id": "9501699156c84d75bcfbf2c42bc1b666",
+          "call_index": 3,
+          "epoch": 0,
+          "state": "stop"
+        },
+        "context_management": {
+          "manage_request": true,
+          "edits": [
+            {
+              "type": "evict",
+              "target": "session"
+            }
+          ]
+        }
+      },
+      "body_keys": [
+        "messages",
+        "model",
+        "stream"
+      ],
+      "message_count": 0,
+      "roles": [],
+      "shapes": [],
+      "model": "stub-model",
+      "manage": true
+    },
+    {
+      "path": "/v1/chat/completions",
+      "hint": null,
+      "body_keys": [
+        "messages",
+        "model",
+        "stream"
+      ],
+      "message_count": 1,
+      "roles": [
+        "user"
+      ],
+      "shapes": [
+        {
+          "role": "user",
+          "content": [
+            "text"
+          ],
+          "tool_calls": 0,
+          "tool_call_id": false,
+          "name": "user"
+        }
+      ],
+      "model": "stub-model",
+      "manage": false
+    }
+  ],
+  "checks": {
+    "every_hint_valid": true,
+    "body_has_no_hint_fields": true,
+    "auxiliary_request_has_no_hint": true,
+    "states": [
+      "start",
+      "append",
+      "append",
+      "pause",
+      "resume",
+      "stop",
+      null
+    ]
+  }
+}
